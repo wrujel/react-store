@@ -1,0 +1,40 @@
+.card {
+  box-shadow: 0 0 10px 5px #e1e5ee;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 28rem;
+  max-width: min-content;
+  height: 20rem;
+}
+
+.card__img {
+  margin-top: 1rem;
+  max-width: fit-content;
+  max-height: 10rem;
+  align-self: center;
+}
+
+.card__title {
+  font-size: medium;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card__row {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__btn {
+  background-color: dodgerblue;
+  border-radius: 0.4rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    min-width: 14rem;
+  }
+}

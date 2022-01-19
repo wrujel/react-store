@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  visibility: visible;
+}
+
+.modal__load.is-loaded {
+  display: none;
+}
+
+.modal__container {
+  position: relative;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 28rem;
+  max-width: min-content;
+  display: none;
+}
+
+.modal__container.is-loaded {
+  display: flex;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+
+.modal__img {
+  margin-top: 1rem;
+  max-width: fit-content;
+  max-height: 10rem;
+  align-self: center;
+}
+
+.modal__title {
+  font-size: medium;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.modal__price {
+  margin-top: 0.7rem;
+}
+
+.modal__price::before {
+  content: '$';
+  font-size: 1rem;
+  position: relative;
+  top: -0.2rem;
+  padding-right: 0.1rem;
+}
+
+.modal__description {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.modal__category {
+  text-align: left;
+}
+
+.modal.is-open {
+  display: flex;
+}
